@@ -52,6 +52,12 @@ Candidates for this exam have skills and experience working with an area of info
 
 **Learning Module** :point_right: [Describe cloud computing](https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/)
 
+| **Task** | **Status** |
+|:----|:----:|
+|  Read content | :white_check_mark: |
+|  Took notes | :no_entry_sign: |
+|  Reviewed/revised notes | :no_entry_sign: |
+
 * Define cloud computing
 * Describe the shared responsibility model
 * Define cloud models, including public, private, and hybrid
