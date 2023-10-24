@@ -1,4 +1,4 @@
-# microsoft-learning
+# Microsoft Learning
 This repository contains notes and learning resources for Microsoft software. It is intended to serve both as an annotated study guide for the relevant exams and as a persistent resource for ongoing documentation.
 
 # Contents
@@ -64,6 +64,12 @@ Candidates for this exam have skills and experience working with an area of info
 
 **Learning Module** :point_right: [Describe the benefits of using cloud services](https://learn.microsoft.com/en-us/training/modules/describe-benefits-use-cloud-services/)
 
+| **Task** | **Status** |
+|:----|:----:|
+|  Read content | :white_check_mark: |
+|  Took notes | :no_entry_sign: |
+|  Reviewed/revised notes | :no_entry_sign: |
+
 * Describe the benefits of high availability and scalability in the cloud
 * Describe the benefits of reliability and predictability in the cloud
 * Describe the benefits of security and governance in the cloud
@@ -72,6 +78,12 @@ Candidates for this exam have skills and experience working with an area of info
 #### Describe cloud service types
 
 **Learning Module** :point_right: [Describe cloud service types](https://learn.microsoft.com/en-us/training/modules/describe-cloud-service-types/)
+
+| **Task** | **Status** |
+|:----|:----:|
+|  Read content | :white_check_mark: |
+|  Took notes | :no_entry_sign: |
+|  Reviewed/revised notes | :no_entry_sign: |
 
 * Describe infrastructure as a service (IaaS)
 * Describe platform as a service (PaaS)
@@ -86,6 +98,12 @@ Candidates for this exam have skills and experience working with an area of info
 
 **Learning Module** :point_right: [Describe the core architectural components of Azure](https://learn.microsoft.com/en-us/training/modules/describe-core-architectural-components-of-azure/)
 
+| **Task** | **Status** |
+|:----|:----:|
+|  Read content | :white_check_mark: |
+|  Took notes | :no_entry_sign: |
+|  Reviewed/revised notes | :no_entry_sign: |
+
 * Describe Azure regions, region pairs, and sovereign regions
 * Describe availability zones
 * Describe Azure datacenters
@@ -98,6 +116,12 @@ Candidates for this exam have skills and experience working with an area of info
 
 **Learning Module** :point_right: [Describe Azure compute and networking services](https://learn.microsoft.com/en-us/training/modules/describe-azure-compute-networking-services/)
 
+| **Task** | **Status** |
+|:----|:----:|
+|  Read content | :white_check_mark: |
+|  Took notes | :no_entry_sign: |
+|  Reviewed/revised notes| :no_entry_sign: |
+
 * Compare compute types, including containers, virtual machines, and functions
 * Describe virtual machine options, including Azure virtual machines, Azure Virtual Machine Scale Sets, availability sets, and Azure Virtual Desktop
 * Describe the resources required for virtual machines
@@ -109,6 +133,12 @@ Candidates for this exam have skills and experience working with an area of info
 
 **Learning Module** :point_right: [Describe Azure storage services](https://learn.microsoft.com/en-us/training/modules/describe-azure-storage-services/)
 
+| **Task** | **Status** |
+|:----|:----:|
+|  Read content | :no_entry_sign: |
+|  Took notes | :no_entry_sign: |
+|  Reviewed/revised notes | :no_entry_sign: |
+
 * Compare Azure Storage services
 * Describe storage tiers
 * Describe redundancy options
@@ -119,6 +149,12 @@ Candidates for this exam have skills and experience working with an area of info
 #### Describe Azure identity, access, and security
 
 **Learning Module** :point_right: [Describe Azure identity, access, and security](https://learn.microsoft.com/en-us/training/modules/describe-azure-identity-access-security/)
+
+| **Task** | **Status** |
+|:----|:----:|
+|  Read content | :no_entry_sign: |
+|  Took notes | :no_entry_sign: |
+|  Reviewed/revised notes | :no_entry_sign: |
 
 * Describe directory services in Azure, including Azure Active Directory (Azure AD), part of Microsoft Entra and Azure Active Directory Domain Services (Azure AD DS)
 * Describe authentication methods in Azure, including single sign-on (SSO), multi-factor authentication (MFA), and passwordless
@@ -137,6 +173,12 @@ Candidates for this exam have skills and experience working with an area of info
 
 **Learning Module** :point_right: [Describe cost management in Azure](https://learn.microsoft.com/en-us/training/modules/describe-cost-management-azure/)
 
+| **Task** | **Status** |
+|:----|:----:|
+|  Read content | :no_entry_sign: |
+|  Took notes | :no_entry_sign: |
+|  Reviewed/revised notes | :no_entry_sign: |
+
 * Describe factors that can affect costs in Azure
 * Compare the pricing calculator and the Total Cost of Ownership (TCO) Calculator
 * Describe cost management capabilities in Azure
@@ -146,6 +188,12 @@ Candidates for this exam have skills and experience working with an area of info
 
 **Learning Module** :point_right: [Describe features and tools in Azure for governance and compliance](https://learn.microsoft.com/en-us/training/modules/describe-features-tools-azure-for-governance-compliance/)
 
+| **Task** | **Status** |
+|:----|:----:|
+|  Read content | :no_entry_sign: |
+|  Took notes | :no_entry_sign: |
+|  Reviewed/revised notes | :no_entry_sign: |
+
 * Describe the purpose of Microsoft Purview in Azure
 * Describe the purpose of Azure Policy
 * Describe the purpose of resource locks
@@ -153,6 +201,12 @@ Candidates for this exam have skills and experience working with an area of info
 #### Describe features and tools for managing and deploying Azure resources
 
 **Learning Module** :point_right: [Describe features and tools for managing and deploying Azure resources](https://learn.microsoft.com/en-us/training/modules/describe-features-tools-manage-deploy-azure-resources/)
+
+| **Task** | **Status** |
+|:----|:----:|
+|  Read content | :no_entry_sign: |
+|  Took notes | :no_entry_sign: |
+|  Reviewed/revised notes | :no_entry_sign: |
 
 * Describe the Azure portal
 * Describe Azure Cloud Shell, including Azure Command-Line Interface (CLI) and Azure PowerShell
@@ -163,6 +217,12 @@ Candidates for this exam have skills and experience working with an area of info
 #### Describe monitoring tools in Azure
 
 **Learning Module** :point_right: [Describe monitoring tools in Azure](https://learn.microsoft.com/en-us/training/modules/describe-monitoring-tools-azure/)
+
+| **Task** | **Status** |
+|:----|:----:|
+|  Read content | :no_entry_sign: |
+|  Took notes | :no_entry_sign: |
+|  Reviewed/revised notes | :no_entry_sign: |
 
 * Describe the purpose of Azure Advisor
 * Describe Azure Service Health
