@@ -181,7 +181,7 @@ Candidates for this exam have skills and experience working with an area of info
 
 | **Task** | **Status** |
 |:----|:----:|
-|  Read content | :no_entry_sign: |
+|  Read content | :white_check_mark: |
 |  Took notes | :no_entry_sign: |
 |  Reviewed/revised notes | :no_entry_sign: |
 
