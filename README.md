@@ -55,16 +55,66 @@ Candidates for this exam have skills and experience working with an area of info
 | **Task** | **Status** |
 |:----|:----:|
 |  Read content | :white_check_mark: |
-|  Took notes | :no_entry_sign: |
+|  Took notes | :white_check_mark: |
 |  Reviewed/revised notes | :no_entry_sign: |
 
-* Define cloud computing
-* Describe the shared responsibility model
-* Define cloud models, including public, private, and hybrid
-* Identify appropriate use cases for each cloud model
-* Describe the consumption-based model
-* Compare cloud pricing models
-* Describe serverless
+**Objectives**
+
+* [Define cloud computing](#cloud-computing)
+* [Describe the shared responsibility model](#the-shared-responsibility-model)
+* [Define cloud models, including public, private, and hybrid](#cloud-models)
+* [Identify appropriate use cases for each cloud model](#cloud-models)
+* [Describe the consumption-based model](#the-consumption-based-model)
+* [Compare cloud pricing models](#cloud-pricing-models)
+* ~~Describe serverless~~ (NOTE: Serverless computing was not described in this module)
+
+##### Cloud Computing
+
+**Cloud computing** is defined as the delivery of computing services over the Internet. 
+
+The main difference between cloud computing and traditional hosting models is that cloud computing allows for rapid scaling in response to increasing or decreasing demand - businesses do not need to build new data centers or sell off servers to expand or manage costs. Cloud providers also offer services that require customers to perform less maintenance and upkeep, thereby allowing them to focus on application development and delivery without worrying about operations.
+
+The basic services provided by all cloud providers are *compute power* and *storage*. **Compute power** refers to the processing power of the machines in use. **Storage** is the volume of data that can be stored on a machine. Cloud computing allows customers to avoid the traditional requirement of buying physical hardware for these services, which can be prone to errors in estimation and may constrain growth.
+
+##### The Shared Responsibility Model
+
+The **shared responsibility model** is a high-level description of how cloud computing services operate relative to the traditional self-hosted approach. Under the traditional model, a company is responsible for all aspects of physical IT infrastructure, including the maintenance of physical security, physical networking, and physical host machines within a data center. With cloud computing, those responsibilities shift to the cloud provider. 
+
+Importantly, the cloud provider is *always* responsible for maintaining physical infrastructure under any cloud computing services. Similarly, the customer is *always* responsible for the data accessed and stored via cloud services, physical devices used to connect to cloud resources, and managing accounts and identities used to access resources. Responsibility for other operations, such as patches to operating systems or network controls, vary depending on the type of service utilized.
+
+Additional information related to the shared responsibility model is available in [Microsoft's security documentation](https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility).
+
+![Shared Responsibility Model](assets/shared-responsibility-diagram.svg)
+
+##### Cloud Models
+
+There are at least four models that define the deployment of cloud computing services.
+
+The **private cloud** model refers to the deployment of computing services over the Internet that is used by a single business entity. 
+
+The **public cloud** model refers to cloud computing services offered to the general public, meaning multiple different business entities might have data located in the same data center.
+
+The **hybrid cloud** model refers to a business entity's use of public cloud computing services for some tasks and private cloud services for others. Such an arrangement might be used for temporary purposes or over longer periods of time related to specific configurations. Microsoft has specific Azure services oriented around hybrid cloud solutions [described in a separate learning module](https://learn.microsoft.com/en-us/training/modules/intro-to-azure-hybrid-services/).
+
+A **multi-cloud** model refers to a business entity's use of public cloud computing services from multiple different providers, such as AWS and Azure.
+
+Comparing the three main models:
+
+* Private cloud offers the greatest amount of control over resources and security; data are also segregated from that belonging to other entities. The disadvantages of this approach are similar to those for the traditional data center - the entity is responsible for purchasing and managing the physical hardware involved, increasing maintenance costs and decreasing scalability.
+* Public cloud offers the greatest ability to control costs while minimizing responsibility for physical hardware. The disadvantage of this approach is that it gives entities less control over resources and security than the other cloud models.
+* Hybrid cloud offers the greatest flexibility by allowing companies to decide which services to use from public cloud providers and which to keep separate. The disadvantage of this approach is that it places responsibility on companies to manage the boundaries between these two different cloud environments.
+
+:question: Microsoft specifically mentions two services in the context of these cloud types:
+* Azure Arc, which enables companies to manage cloud environments (including those in hybrid and multi-cloud configurations)
+* [Azure VMware Solution](https://learn.microsoft.com/en-us/training/modules/intro-azure-vmware-solution/), which facilitates the transition of VMware workloads to Azure
+
+##### The Consumption-Based Model
+
+Cloud computing allows companies to implement a **consumption-based model** for IT resource costs, meaning that companies have the ability to only pay for what they consume. This transforms IT spending from a model based upon *capital expenditures (CapEx)* to one based upon *operating expenditures (OpEx)*. The primary benefit of cloud computing is this ability to avoid costly investments in the development of data centers or physical infrastructure based upon estimated needs (i.e. CapEx). Instead, companies can pay for only the resources they *actually* need as they need them.
+
+##### Cloud Pricing Models
+
+Cloud computing uses a "pay-as-you-go" pricing model, meaning that companies only pay for services that they use. This is essentially renting compute, storage, or other capabilities from cloud service provider's data center.
 
 #### Describe the benefits of using cloud services
 
