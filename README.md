@@ -126,11 +126,75 @@ Cloud computing uses a "pay-as-you-go" pricing model, meaning that companies onl
 |  Took notes | :no_entry_sign: |
 |  Reviewed/revised notes | :no_entry_sign: |
 
-* Describe the benefits of high availability and scalability in the cloud
-* Describe the benefits of reliability and predictability in the cloud
-* Describe the benefits of security and governance in the cloud
-* Describe the benefits of manageability in the cloud
+* [Describe the benefits of high availability and scalability in the cloud](#cloud-in-the-cloud-high-availability-and-scalability)
+* [Describe the benefits of reliability and predictability in the cloud](#cloud-in-the-cloud-reliability-and-predictability)
+* [Describe the benefits of security and governance in the cloud](#cloud-in-the-cloud-security-and-governance)
+* [Describe the benefits of manageability in the cloud](#cloud-in-the-cloud-manageability)
 
+##### :cloud: In the Cloud: High Availability and Scalability
+
+**High Availability**
+
+**Availability** refers to the accessibility of a service (i.e. uptime). 
+
+Because cloud computing involves renting resources from cloud service providers, it is important that customers have guarantees as to how often those rented resources will remain available in any given time period. These guarantees are enshrined in service level agreements (SLAs) that guarantee service availability at set percentages, such as 99%, 99.9%, 99.95%, and 99.99%.
+
+There are substantial differences in these availability guarantees. For example, a service that is 99% available can have as much as 432 minutes/month of downtime, whereas a service that is 99.9% available can only have 43.2 minutes/month of downtime before violating the SLA.
+
+**Scalability**
+
+**Scalability** refers to the ability to adjust resources to meet demand (in either direction that it might change). 
+
+*Vertical scaling* involves adding or removing capabilities to/from an existing resource to meet demands. For example, a single VM could scale vertically through the addition of processing power in RAM or CPU.(:computer: + RAM :arrow_up: + CPU :arrow_up:)
+
+*Horizontal scaling* involves adding or removing identical resources as demand changes. For example, a configuration consisting of a load balancer and two VMs could scale horizontally by adding a new VM. (:computer: + :computer: + :computer::new:)
+
+##### :cloud: In the Cloud: Reliability and Predictability
+
+**Reliability**
+
+**Reliability** refers to the ability of a system to recover from failures and continue to function. Reliability can be thought of as resilience against adverse events, such as power outages or natural disasters.
+
+The cloud, as a decentralized system, presents an infrastructure for reliability. Data and compute can be shifted from one data center or region with minimal latency compared to traditional data centers or on-premises approaches. Additional features of Azure, such as availability zones and regions add to this reliability.
+
+**Predictability**
+
+Microsoft distinguishes between two different types of predictability: performance and cost.
+
+**Performance predictability** means providing a predictably positive experience for customers. This includes features such as:
+* Autoscaling
+* Load balancing
+* High availability
+
+**Cost predictability** means forecasting the cost of expenditures on computing resources. Microsoft provides various resources to aid consumers when predicting costs, including:
+* Standard Azure resource monitoring tools
+* The Pricing Calculator:tm:
+* The Total Cost of Ownership:tm: (TCO) tool
+
+##### :cloud: In the Cloud: Security and Governance
+
+**Compliance and Security**
+* Azure services include offerings like set templates aligned to compliance regimes, corporate standards, and regulatory requirements
+* Cloud-based auditing allows visibility into vulnerabilities that might impact cloud resources
+* Cloud providers are optimized to deliver services over the Internet making them uniquely suited to prevent DDoS and similar attacks
+
+**Governance**
+* Cloud-based monitoring tools enable administrators to identify resources that are out of alignment with corporate policies
+* These same tools often allow the creation and enforcement of policies throughout different levels of a resource hierarchy
+
+##### :cloud: In the Cloud: Manageability
+
+Microsoft distinguishes between management of the cloud and management in the cloud. 
+
+**Management *of* the cloud** refers to the management of cloud resources, including actions like scaling and deploying resources as well as monitoring. 
+
+**Management *in* the cloud** simply refers to the manner in which management is performed. Much of the learning modules revolve around the Azure Web portal, but management tasks can also be performed using a CLI, PowerShell, or APIs.
+
+##### The Well-Architected Framework
+
+This section in the learning path includes references to the [Microsoft Azure Well-Architected Framework](https://learn.microsoft.com/en-us/training/paths/azure-well-architected-framework/). There is an entire learning path dedicated to this resource and it would be a good idea to review its content prior to taking the `AZ-900` Exam.
+
+<!-- TODO: Review Microsoft Azure Well-Architected Framework -->
 #### Describe cloud service types
 
 **Learning Module** :point_right: [Describe cloud service types](https://learn.microsoft.com/en-us/training/modules/describe-cloud-service-types/)
