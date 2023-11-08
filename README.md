@@ -123,7 +123,7 @@ Cloud computing uses a "pay-as-you-go" pricing model, meaning that companies onl
 | **Task** | **Status** |
 |:----|:----:|
 |  Read content | :white_check_mark: |
-|  Took notes | :no_entry_sign: |
+|  Took notes | :white_check_mark: |
 |  Reviewed/revised notes | :no_entry_sign: |
 
 * [Describe the benefits of high availability and scalability in the cloud](#cloud-in-the-cloud-high-availability-and-scalability)
@@ -221,16 +221,102 @@ This section in the learning path includes references to the [Microsoft Azure We
 | **Task** | **Status** |
 |:----|:----:|
 |  Read content | :white_check_mark: |
-|  Took notes | :no_entry_sign: |
+|  Took notes | :white_check_mark: |
 |  Reviewed/revised notes | :no_entry_sign: |
 
-* Describe Azure regions, region pairs, and sovereign regions
-* Describe availability zones
-* Describe Azure datacenters
-* Describe Azure resources and resource groups
-* Describe subscriptions
-* Describe management groups
-* Describe the hierarchy of resource groups, subscriptions, and management groups
+* [Describe Azure data centers](#azure-data-centers)
+* [Describe Azure regions, region pairs, and sovereign regions](#azure-regions)
+* [Describe availability zones](#availability-zones)
+* [Describe Azure resources and resource groups](#azure-resources)
+* [Describe subscriptions](#azure-subscriptions)
+* [Describe management groups](#management-groups)
+* [Describe the hierarchy of resource groups, subscriptions, and management groups](#azure-management-hierarchy)
+
+Microsoft Azure is a collection of more than 100 cloud services. The core architectural components of Azure consist of two groups: the *physical infrastructure* and the *management infrastructure*.
+
+##### Azure Data Centers
+
+**Data centers** are the smallest unit of the global physical infrastructure behind Azure. These data centers are "facilities with resources arranged in racks, with dedicated power, cooling, and networking infrastructure."
+
+Azure regions and availability zones are fundamental methods of organizing data centers for redundancy, resilience, and high availability. 
+
+##### Azure Regions
+
+**Azure regions** are geographic regions on the planet that consist of at least one data center - possibly more - physically networked together.
+
+* Most services on Azure must be deployed to a region when created
+* The following services do not require a region:
+    * Microsoft Entra ID
+    * Azure Traffic Manager
+    * Azure DNS
+* Some services and VM features are only available in specific regions
+
+##### Availability Zones
+
+Azure regions *may* consist of availability zones. **Availability zones** are physically separate data centers within the same Azure region. As their name implies, availability zones are architected to guarantee high availability. 
+
+Each availability zone is an isolation boundary designed to prevent issues or service disruptions in one data center from affecting other data centers. Within an availability zone, multiple data centers are networked together using private fiber optic connections.
+
+![Availability Zones within an Azure Region](/assets/availability-zones.png)
+
+:exclamation:Each availability zone consists of at least three data centers. However, not all regions support availability zones.
+
+Availability zones are designed to support mission-critical applications that must be highly available. They promote application resilience through redundancy. 
+
+Only some Azure services support availability zones. In particular, availability zones are intended to support:
+
+* virtual machines,
+* managed disks,
+* load balancers, and
+* SQL databases
+
+Availability zone-enabled services can be categorized as **zonal services**, **zone-redundant services**, and **non-regional services**. Zonal services are isolated to a single zone; zone-redundant services automatically replicate across zones; non-regional services automatically replicate across availability zones and regions.
+
+![Services by Resilience](/assets/services-by-resilience-v2.png)
+
+**Azure region pairs** provide even more resiliency by replicating data and services from one region to a companion region at least 300 miles away. Most of these regions allow two-way pairing, meaning that Region 1 in a par is the backup for Region 2 and vice versa, but some offer further isolation.
+
+![Azure Region Pairs](/assets/region-pairs.png)
+
+Beyond simple redundancy, region pairs enable high availability during scheduled updates while maintaining [data residency](https://azure.microsoft.com/en-us/explore/global-infrastructure/data-residency/) in the host country (with the exception of two regions).
+
+**Sovereign regions** are Azure regions that are isolated from the main instance of Azure for compliance or legal purposes. These appear to be government-specific regions in the U.S. and China.
+
+
+
+##### Azure Resources
+
+**Resources** are the basic unit of service delivery in Azure. Databases, virtual networks, virtual machines, etc. are all resources.
+
+**Resource groups** are groupings of resources designed to facilitate organization and policy enforcement uniformly across services. Resource groups can contain several resources, but a single resource can only belong to one resource group at a time. Policies and actions applied to a resource group cascade to the resources therein. Additionally, *resource groups cannot be nested*.
+
+Microsoft emphasizes that there are no firm rules surrounding resource groups - they are flexible for end users.
+
+##### Azure Subscriptions
+
+**Azure subscriptions** are a basic unit of management, billing, and scale that sit above resource groups in a hierarchy. In particular, **subscriptions facilitate billing and policy enforcement**.
+
+![Azure Account Hierarchy](/assets/account-scope-levels.png)
+
+An Azure account must have at least one subscription. Organizations can use multiple subscriptions to establish *billing boundaries*, for example isolating costs by business area. Alternatively(?), organizations can use different subscriptions to establish *access control boundaries*, setting policies that apply to entire resource groups. Subscriptions can help delineate `dev`, `test`, and `prod` environments or office areas.
+
+As with resource groups, *subscriptions cannot be nested* - they can only be grouped under a single Azure account.
+
+##### Management Groups
+
+**Management groups** are the top of the hierarchy in Azure account management and allow for the organization of one or more subscriptions into logical groupings. (Interestingly, Microsoft's documentation does not explicitly say that management groups must correspond to a single Azure account, even though that appears to be the case.) 
+
+Management groups are primarily intended to facilitate governance across subscriptions by allowing for the assignment of uniform policies to all subscriptions within a group.
+
+![Management Group Hierarchy Example](/assets/management-groups-example.jpg)
+
+Unlike other aspects of the Azure management hierarchy, management groups *can* be nested (up to six levels deep). Each level can have only one parent, though, meaning that a single subscription cannot correspond to multiple co-equal management groups.
+
+##### Azure Management Hierarchy
+
+The Azure management hierarchy is flexible, allowing for each organization to group resources and subscriptions in ways that suit its requirements. Ultimately, the goal of all these hierarchies is to allow for unified policy and access management aligned to an organization's structure and requirements. 
+
+Subscriptions serve a special role related to billing and management in this hierarchy. Similarly, management groups enable organizations to enforce top-level policies throughout an organization's Azure resources and to standardize roles-based access controls.
 
 #### Describe Azure compute and networking services
 
